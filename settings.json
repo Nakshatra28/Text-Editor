@@ -1,0 +1,17 @@
+
+{
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "class[:]\\s*['\"]([^'\"]*)['\"]"
+  ],
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.suggestions": true,
+  "emmet.includeLanguages": {
+    "html": "html"
+},
+"liveServer.settings.port": 5503
+}
