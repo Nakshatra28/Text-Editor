@@ -16,98 +16,66 @@
     .active {
       background-color: rgb(137, 198, 255);
     }
-   
-  #text-input h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-  }
 
-  #text-input h2 {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: #444;
-  }
-
-  #text-input h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #555;
-  }
-
-  #text-input h4 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #666;
-  }
-
-  #text-input h5 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #777;
-  }
-
-  #text-input h6 {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #888;
-  }
-</style>
-
+    #text-input h1 { font-size: 2rem; font-weight: bold; color: #333; }
+    #text-input h2 { font-size: 1.75rem; font-weight: bold; color: #444; }
+    #text-input h3 { font-size: 1.5rem; font-weight: bold; color: #555; }
+    #text-input h4 { font-size: 1.25rem; font-weight: bold; color: #666; }
+    #text-input h5 { font-size: 1.1rem; font-weight: bold; color: #777; }
+    #text-input h6 { font-size: 1rem; font-weight: bold; color: #888; }
   </style>
 </head>
 <body class="bg-[#1975ff] flex justify-center m-2">
-  <div class="bg-white w-[45%] rounded-lg shadow-md p-10">
+  <div class="bg-white w-full max-w-[90vw] sm:max-w-3xl rounded-lg shadow-md p-4 sm:p-10">
     <!-- Format Buttons -->
-    <div class="flex gap-6 m-2">
-      <button id="bold" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-bold"></i></button>
-      <button id="italic" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-italic"></i></button>
-      <button id="underline" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-underline"></i></button>
-      <button id="strikethrough" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-strikethrough"></i></button>
-      <button id="superscript" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-superscript"></i></button>
-      <button id="subscript" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-subscript"></i></button>
-      <button id="insertOrderedList" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-list-ol"></i></button>
-      <button id="insertUnorderedList" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-list"></i></button>
-      <button id="undo" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-rotate-left"></i></button>
-      <button id="redo" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-rotate-right"></i></button>
-      <button id="createLink" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-link"></i></button>
-      <button id="unlink" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-unlink"></i></button>
-      <button id="justifyLeft" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-align-left"></i></button>
-      <button id="justifyCenter" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-align-center"></i></button>
+    <div class="flex flex-wrap gap-2 sm:gap-6 m-2">
+      <button id="bold" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-bold"></i></button>
+      <button id="italic" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-italic"></i></button>
+      <button id="underline" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-underline"></i></button>
+      <button id="strikethrough" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-strikethrough"></i></button>
+      <button id="superscript" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-superscript"></i></button>
+      <button id="subscript" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-subscript"></i></button>
+      <button id="insertOrderedList" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-list-ol"></i></button>
+      <button id="insertUnorderedList" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-list"></i></button>
+      <button id="undo" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-rotate-left"></i></button>
+      <button id="redo" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-rotate-right"></i></button>
+      <button id="createLink" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-link"></i></button>
+      <button id="unlink" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-unlink"></i></button>
+      <button id="justifyLeft" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-align-left"></i></button>
+      <button id="justifyCenter" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-align-center"></i></button>
     </div>
 
     <!-- Second Row -->
-    <div class="flex gap-6 m-2 mt-5">
-      <button id="justifyRight" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-align-right"></i></button>
-      <button id="justifyFull" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-align-justify"></i></button>
-      <button id="indent" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-indent"></i></button>
-      <button id="outdent" class="option-button shadow-sm rounded-sm p-1"><i class="fa-solid fa-outdent"></i></button>
+    <div class="flex flex-wrap gap-2 sm:gap-6 m-2 mt-5">
+      <button id="justifyRight" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-align-right"></i></button>
+      <button id="justifyFull" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-align-justify"></i></button>
+      <button id="indent" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-indent"></i></button>
+      <button id="outdent" class="option-button shadow-sm rounded-sm p-2"><i class="fa-solid fa-outdent"></i></button>
 
-     <select id="formatBlock" class="adv-option-button shadow-sm rounded-sm p-1">
-  <option value="<h1>">H1</option>
-  <option value="<h2>">H2</option>
-  <option value="<h3>">H3</option>
-  <option value="<h4>">H4</option>
-  <option value="<h5>">H5</option>
-  <option value="<h6>">H6</option>
-  <option value="<p>">Paragraph</option>
-</select>
+      <select id="formatBlock" class="adv-option-button shadow-sm rounded-sm p-2">
+        <option value="<h1>">H1</option>
+        <option value="<h2>">H2</option>
+        <option value="<h3>">H3</option>
+        <option value="<h4>">H4</option>
+        <option value="<h5>">H5</option>
+        <option value="<h6>">H6</option>
+        <option value="<p>">Paragraph</option>
+      </select>
 
-
-      <select id="fontname" class="adv-option-button shadow-sm rounded-sm p-1"></select>
-      <select id="fontsize" class="adv-option-button shadow-sm rounded-sm p-1"></select>
+      <select id="fontname" class="adv-option-button shadow-sm rounded-sm p-2"></select>
+      <select id="fontsize" class="adv-option-button shadow-sm rounded-sm p-2"></select>
     </div>
 
     <!-- Colors -->
-    <div class="flex gap-6 m-2 mt-5">
+    <div class="flex flex-wrap items-center gap-2 sm:gap-6 m-2 mt-5">
       <input type="color" id="foreColor" class="adv-option-button shadow-sm rounded-xl border border-slate-400 p-1" />
-      <label for="foreColor">Font Color</label>
+      <label for="foreColor" class="text-sm">Font Color</label>
       <input type="color" id="backColor" class="adv-option-button shadow-sm rounded-xl border border-slate-400 p-1" />
-      <label for="backColor">Highlight Color</label>
+      <label for="backColor" class="text-sm">Highlight Color</label>
     </div>
 
     <!-- Content Editable Area -->
-    <div id="text-input" contenteditable="true" class="border border-slate-300 w-full h-[50vh] p-2 overflow-y-auto"></div>
+    <div id="text-input" contenteditable="true" class="border border-slate-300 w-full h-[40vh] sm:h-[50vh] p-2 overflow-y-auto"></div>
   </div>
 
   <!-- Script Section -->
@@ -116,14 +84,11 @@
     const advanceOptionButton = document.querySelectorAll(".adv-option-button");
     const fontName = document.getElementById("fontname");
     const fontSizeRef = document.getElementById("fontsize");
-    const writingArea = document.getElementById("text-input");
     const linkButton = document.getElementById("createLink");
     const formatBlock = document.getElementById("formatBlock");
 
-    // Sample font list
     const fontList = ["Arial", "Verdana", "Times New Roman", "Garamond", "Georgia", "Courier New"];
 
-    // Initialize
     const initializer = () => {
       fontList.forEach((value) => {
         let option = document.createElement("option");
@@ -159,12 +124,10 @@
       });
     });
 
-    // ✅ Fix: Add proper event listener for formatBlock
     formatBlock.addEventListener("change", (e) => {
       modifyText("formatBlock", false, e.target.value);
     });
 
-    // Link
     linkButton.addEventListener("click", () => {
       let userLink = prompt("Enter a URL");
       if (/http/i.test(userLink)) {
